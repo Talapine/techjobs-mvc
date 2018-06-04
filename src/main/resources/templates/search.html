@@ -38,6 +38,15 @@
 
     <!-- TODO #2 - Loop over jobs map to display all job fields -->
 
+    <h4 th:text="${jobs != null} ? ${jobs.size()} + ' Result(s)' "></h4>
+
+
+      <div th:replace="fragments :: job-display"></div>
+
+
+
+
+
 </div>
 
 </body>
